@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This bash script displays endless loop in 2 sec sleep
+
+i=1
+while [ "$i" -lt 10 ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+done

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This file creates a new user
+sudo useradd nginx
+sudo sed -i "s/user.*/user nginx;/" /etc/nginx/nginx.conf
+sudo service nginx restart

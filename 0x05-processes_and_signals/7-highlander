@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This bash script displays unterminatable infinite loop in 2 sec sleep
+
+trap "echo I am invincible!!!" 15
+i=1
+while [ "$i" -lt 10 ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+done

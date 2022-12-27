@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This program stops a process without using kill/kilall
+
+pkill "bash"

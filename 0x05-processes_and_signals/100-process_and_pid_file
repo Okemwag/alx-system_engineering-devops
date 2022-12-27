@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script creates a .pid file and adds commands in it
+
+echo $$ > /var/run/myscript.pid
+pidfile=/var/run/myscript.pid
+
+trap 'echo "I hate the kill command";rm $pidfile;exit 0' 15
+trap 'echo Y U no love me?!' 2
+trap 'rm $pidfile' 3
+
+i=1
+while [ "$i" -lt 10 ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+done

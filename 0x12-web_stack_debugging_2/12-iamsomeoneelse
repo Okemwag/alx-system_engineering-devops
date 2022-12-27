@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This File Changes User To Run A Command
+sudo -u "$1" whoami
